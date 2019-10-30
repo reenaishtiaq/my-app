@@ -1,3 +1,7 @@
 .PersonInfo .button-group > * {
     margin: 0 5px;
 }
+.PersonInfo{
+    width: 18rem;
+
+}
