@@ -3,7 +3,7 @@ import './Persons.css';
 import Person from './Person';
 
 export default function Persons() {
-    const personData = [
+    let personData = [
         {
             "name": "Busrha",
             "age": "12",
@@ -22,14 +22,19 @@ export default function Persons() {
             "description": "Comedian at youtube",
             "isEditMode": true
         },
-    ]
+    ];
+    let enableEdit = () => {
+        alert("Hi.I am your grandFather")
+    }
 
     return (
         <div className="Persons">
 
             <h1>Persons</h1>
             {
-                personData.map(person => <Person person={person} />)
+                personData.map(person => <Person 
+                    person={person}
+                    callMeWhenYouWantToEnableEdit = {enableEdit} />)
             }
         </div>
     )

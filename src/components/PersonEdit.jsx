@@ -22,7 +22,7 @@ export default function PersonsEdit(props) {
             <ButtonGroup aria-label="Basic example" className="button-group">
 
                 <Button variant="light">
-                    <FontAwesomeIcon className="text-info" icon={faCheck} />
+                    <FontAwesomeIcon className="text-info" icon={faCheck}  />
                 </Button>
 
                 <Button variant="light">

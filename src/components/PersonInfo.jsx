@@ -6,6 +6,7 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 import PropType from 'prop-types'
 
 export default function PersonsInfo(props) {
+    
     return (
         <Card.Body className="PersonInfo">
 
@@ -20,7 +21,8 @@ export default function PersonsInfo(props) {
             <ButtonGroup className="button-group" aria-label="Basic example" className="button-group">
 
                 <Button variant="light">
-                    <FontAwesomeIcon className="text-info" icon={faEdit} />
+                    <FontAwesomeIcon className="text-info" icon={faEdit}
+                    onClick={props.enableEdit} />
                 </Button>
 
                 <Button variant="light">

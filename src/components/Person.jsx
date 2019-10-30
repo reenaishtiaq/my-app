@@ -6,12 +6,18 @@ import PersonEdit from './PersonEdit';
 import { Card, Button } from 'react-bootstrap';
 
 export default function Person(props) {
+    let myNumber = '03011234567';
+    
     return (
-        <Card style={{ width: '18rem' }}>
+
+        <Card className="card">
 
             {props.person.isEditMode ?
                 <PersonEdit person={props.person} /> :
-                <PersonInfo person={props.person} />
+                <PersonInfo person={props.person}
+                thisIsMyNumber = {myNumber} 
+                jabEditButtonClickKaroToKYaKaro = 
+                {props.enableEdit}/>
             }
 
         </Card>
@@ -20,4 +26,5 @@ export default function Person(props) {
 
 // Person.propTypes = {
 //     person: ProType.object
+// enabledEditButton:PropType.func
 // }
